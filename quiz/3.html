@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Japan Tourism Quiz 3</title>
+	<link href="../style.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main class="quiz-wrapper">
+		<form class="quiz">
+			<section class="quiz-question-wrapper">
+				<div class="footer-icon-wrapper">3 / 3</div>
+				<button type="button" class="link-arrow back" onclick="history.back()">
+					<div class="link-arrow-content">
+						<div class="link-arrow-icon quiz-back"></div>Back
+					</div>
+				</button>
+				<h1 class="quiz-question">Finally, how busy do you want to be?</h1>
+				<p class="quiz-info-text">Drag the slider to best represent your answer.</p>
+
+				<div class="slider-wrapper">
+					<div class="slider-text-wrapper">
+						<span class="slider-text-value">Relaxed</span>
+						<span class="slider-text-value">Balanced</span>
+						<span class="slider-text-value">Busy</span>
+					</div>
+					<input type="range" min="0" max="100" value="50" step="10" class="form-slider">
+				</div>
+				<div class="button-container">
+					<button class="standard-button form-button" onclick="window.location.href='/quiz/itinerary.html';"
+						type="button">Generate my itinerary</button>
+				</div>
+			</section>
+		</form>
+	</main>
+	<script src="../quizScript.js"></script>
+</body>
+</html>

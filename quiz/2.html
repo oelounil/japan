@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Japan Tourism Quiz 2</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main class="quiz-wrapper">
+		<form class="quiz">
+		<section class="quiz-question-wrapper">
+			<div class="footer-icon-wrapper">2 / 3</div>
+			<button type="button" class="link-arrow back" onclick="history.back()"><div class="link-arrow-content"><div class="link-arrow-icon quiz-back"></div>Back</div></button>
+			<h1 class="quiz-question">What sort of travel are you interested in?</h1>
+			<p class="quiz-info-text">Check the options that best describe you</p>
+			<div class="activity-grid">
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="adventurous" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/adventurous.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Adventurous</h3>
+										<p class="option-text">E.g. Mountain hikes</p>
+									</div>
+								</div>
+				</label>
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="luxurious" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/luxurious.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Luxurious</h3>
+										<p class="option-text">E.g. Hotels</p>
+									</div>
+								</div>
+				</label>
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="artistic" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/artistic.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Artistic</h3>
+										<p class="option-text">E.g. Art Galleries</p>
+									</div>
+								</div>
+				</label>
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="historic" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/historic.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Historic</h3>
+										<p class="option-text">E.g. Shrines</p>
+									</div>
+								</div>
+				</label>
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="iconic" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/iconic.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Iconic</h3>
+										<p class="option-text">E.g. Hot springs </p>
+									</div>
+								</div>
+				</label>
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="scenic" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/scenic.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Scenic</h3>
+										<p class="option-text">E.g. Lakes</p>
+									</div>
+								</div>
+				</label>
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="cultural" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/cultural.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Cultural</h3>
+										<p class="option-text">E.g. Tea ceremony</p>
+									</div>
+								</div>
+				</label>
+				<label class="activity-wrapper">
+				  <input type="checkbox" value="food" class="activity-check-box">
+								<div class="activity-block">
+									<img src="../images/quiz/food.png" class="icon-small">
+									<div class="option-text-wrapper activity">
+										<h3 class="option-heading">Food</h3>
+										<p class="option-text">E.g. Food Markets</p>
+									</div>
+								</div>
+				</label>
+			</div>	
+				
+			<button class="standard-button form-button nav-button" onclick="window.location.href='/quiz/3.html';" type="button">Continue</button>
+		</section>
+			
+		</form>
+	</main>
+	<script src="../quizScript.js"></script>
+</body>
+</html>
