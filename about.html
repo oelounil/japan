@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>About Japan Tourism</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<main>
+		<header class="header-page">
+			<nav class="nav-wrapper">
+				<a href="/index.html" class="logo-wrapper">
+					<img src="images/logo.png" class="logo" alt="see japan logo with mount fuji, red sun and green grass">
+					<span class="logo-name">Japan Tourism</span>
+				</a>
+				<div class="nav-menu">
+					<ul class="nav-link-wrapper">
+						<li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="/guide.html" class="nav-link">Guide to Japan</a></li>
+						<li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+					</ul>
+				</div>
+				<div class="nav-button-wrapper">
+					<button class="standard-button nav-button" onclick="window.location.href='/quiz';">Plan my trip</button>
+					<button class="nav-toggle">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+			</nav>
+			<h1>About</h1>
+		</header>
+		<section class="page-body">
+			<div class="about-flex-wrapper">
+				<div class="about-block">
+					<img src="images/about.jpg" class="about-image"
+						alt="street of suburban japan, with power lines cascading across the sky and a man riding a bicycle in the background">
+				</div>
+				<div class="about-block">
+					<h2>Our Goal</h2>
+					<p>We hope to create the perfect journey for you, without all the associated costs and hassles of planning
+						through a third party, or the time in planning by yourself. With our technology, we have created a database
+						of thousands of locations and experiences for you to enjoy in Japan. We hope to make your planning journey
+						an enjoyable one.</p>
+				</div>
+			</div>
+		</section>
+		<section class="contact-section">
+			<div class="contact-wrapper">
+				<div class="footer-icon-wrapper"><img src="images/contact-icon.png" class="footer-icon"
+						alt="graphic icon of two speech bubbles, one with a question mark inside and one with lines symbolising text">
+				</div>
+				<h2>Have a question?</h2>
+				<div class="contact-subheading">We’ll do our best to help.</div>
+				<form class="contact-form">
+					<ul>
+						<div class="form-name-group">
+							<li class="form-item"><label for="first-name">First Name</label>
+								<input id="first-name" class="form-input" name="first-name" type="text" required>
+							</li>
+							<li class="form-item"><label for="last-name">Last Name</label>
+								<input id="last-name" class="form-input" name="last-name" type="text" required>
+							</li>
+						</div>
+						<li class="form-item"><label for="email">Email</label>
+							<input id="email" class="form-input" name="email" type="email" required>
+						</li>
+						<li class="form-item"><label for="message">Message</label>
+							<textarea id="message" class="form-input text-area" name="message" type="text" required></textarea>
+						</li>
+						<li><button type="submit" class="standard-button form-button">Submit Enquiry</button></li>
+					</ul>
+
+				</form>
+			</div>
+		</section>
+	</main>
+	<script src="aboutScript.js"></script>
+</body>

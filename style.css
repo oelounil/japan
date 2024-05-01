@@ -1,0 +1,1141 @@
+html, body {
+  height: 100%;
+  width: 100vw;
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  color: #303030;
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 4em;
+  line-height: 1.2;
+  margin-bottom: 0.25em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+.larger-text {
+  font-size: 1.1em;
+}
+
+/* BUTTONS & LINKS */
+.standard-button {
+  background-color: #587291;
+  color: white;
+  padding: 0.6em 1.5em;
+  border-radius: 0 25px 0 25px;
+  border-style: solid;
+  border-color: #587291;
+  border-width: 1.5px;
+  font-family: 'Nunito';
+  font-size: 1em;
+  font-weight: 600;
+  transition-duration: 0.3s
+}
+
+.standard-button:hover {
+  background-color: transparent;
+  color: #587291;
+}
+
+.hero-button {
+  margin-right: 2em;
+  display: inline-block;
+}
+
+.nav-button {
+		background-color: transparent;
+		color: #587291;
+	}
+
+	.nav-button:hover {
+		background-color: #587291;
+		color: white;
+	}
+
+.link-arrow {
+  display: inline-block;
+  color: #303030;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.link-arrow-content {
+  display: flex;
+  align-items: center;
+}
+
+.link-arrow-icon {
+  margin-left: 0.5em;
+  width: 0.4em;
+  height: 0.4em;
+  transform: rotate(-45deg);
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-width: 1.5px;
+  border-color: #303030;
+  transition-duration: 0.3s
+}
+
+.link-arrow-icon.quiz-back {
+  margin-right: 0.5em;
+  transform: rotate(-225deg);
+}
+
+.link-arrow:hover .link-arrow-icon {
+  transform: translateX(1em) rotate(-45deg);
+}
+
+.link-arrow.back:hover .link-arrow-icon.quiz-back {
+  transform: translateX(-1em) rotate(-225deg);
+}
+
+/* HEADER */
+header {
+  background: #F2F5F9;
+  padding: 1em 10% 1em;
+}
+
+.nav-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+	text-decoration: none;
+}
+
+.logo {
+  height: 120px;
+}
+
+.logo-name {
+  margin-left: 1em;
+  color: #587291;
+  font-family: 'Poppins';
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.nav-menu {
+  top: 150px;
+}
+
+.nav-item {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0 1em;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #303030;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  padding: 0.5em 1em;
+	padding-inline-start: 0;
+	display: block;
+}
+
+a.nav-link:hover {
+  color: #FF5E55;
+}
+
+/* HERO */
+.hero {
+  padding: 0 10% 100px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #F2F5F9;
+}
+
+.hero-flex-box {
+  width: 50%;
+	padding-bottom: 10%;
+}
+
+.hero-image {
+  max-width: 50vw;
+  border-radius: 1000px 0px;
+  margin: 5vw 5vw 0;
+}
+
+.stats-wrapper {
+  display: flex;
+  margin-bottom: 1.5em;
+}
+
+.stats-block {
+  margin-right: 2.5em;
+}
+
+.stats-number {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+.stats-text {
+  font-family: 'Poppins';
+	margin-top: 0;
+}
+
+/* HOME-BODY */
+
+.home-body {
+  margin-top: -100px;
+  background-color: white;
+  border-radius: 100px 100px 0 0;
+  padding: 7.5% 10% 25px;
+  text-align: center;
+}
+
+.process-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 5vw;
+  text-align: left;
+  margin-top: 3em;
+  margin-bottom: 50px;
+}
+
+.process-block {
+  width: 33.3%;
+}
+
+.process-image {
+  width: 100%;
+  height: 55%;
+  object-fit: cover;
+  margin-bottom: 1.25em;
+}
+
+/* FOOTER QUIZ */
+.footer-quiz-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(180deg, #F2F5F9 0%, white 70%);
+  padding: 10%;
+  border-radius: 100px 100px 0 0;
+  margin: 0 10%;
+}
+
+.footer-text {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 45ch;
+}
+
+.footer-icon-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -80px;
+  left: 0; 
+  right: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 15px;
+  border-color: white;
+  background-color: #F2F5F9;
+	color: #587291;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 2em;
+}
+
+.footer-icon {
+  width: 70px;
+}
+
+/* ABOUT */
+header > h1 {
+  text-align: center;
+	margin-bottom: 0.75em;
+}
+
+.header-page {
+  padding: 0 10% 100px;
+}
+
+.page-body {
+  margin-top: -100px;
+  background-color: white;
+  border-radius: 100px 100px 0 0;
+  padding: 7.5% 10% 10%;
+}
+
+.about-flex-wrapper {
+	display: flex;
+	gap: 7.5vw;
+	align-items: center;
+}
+
+.about-block {
+	width: 50%;
+}
+
+.about-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.contact-section {
+	padding: 0 10% 0;
+}
+
+/* FORM */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: linear-gradient(180deg, #F2F5F9 0%, white 70%);
+  padding: 15% 10% 10%;
+  border-radius: 100px 100px 0 0;
+	width: auto;
+}
+
+.contact-subheading {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	font-size: 1.25em;
+	font-weight: 500;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.form-name-group {
+	display: flex;
+	justify-content: space-between;
+	gap: 1em;
+}
+
+form > ul {
+	list-style: none;
+	padding-inline-start: 0;
+	width: 50%;
+	min-width: 400px;
+}
+
+.form-item {
+	margin-top: 1em;
+	list-style-type: none;
+	width: 100%;
+}
+
+.form-input {
+	width: 100%;
+	font-family: "nunito";
+	border-radius: 0 1.5em 0 1.5em;
+	border: 1px solid #C5CEDA;
+	height: 2.75em;
+	padding: 0 1em 0;
+	box-sizing: border-box;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 5px #587291;
+	outline: none;
+}
+
+input, label {
+ 	display:block;
+	margin-bottom: 0.25em;
+}
+
+.text-area {
+	width: 100%;
+	resize: none;
+	height: 12em;
+	padding: 1em;
+}
+
+.form-button {
+	margin-top: 1.5em;
+	border-radius: 25px;
+	width: 100%;
+}
+
+/* GUIDE */
+.guide {
+	display: flex;
+	align-items: flex-start;
+	gap: 10vw;
+}
+
+.guide-content-wrapper {
+	width: 100%;
+}
+
+.guide-block {
+	display: flex;
+	gap: 5vw;
+	width: 100%;
+	padding: 7.5% 0;
+}
+
+.guide-content {
+	width: 60%;
+}
+
+.guide-image-block {
+	width: 40%;
+}
+
+.guide-image {
+	margin-top: 1em;
+	width: 100%;
+	object-fit: cover;
+}
+
+/* GUIDE NAV */
+.guide-nav {
+	position: sticky;
+	top: 0px;
+}
+
+.guide-nav {
+	list-style: none;
+	padding-inline-start: 0;
+	margin: -0.25em;
+	padding: 7.5% 0;
+}
+
+.guide-nav-item {
+	text-align: right;
+}
+
+.guide-nav-link {
+	color: #656565;
+	text-decoration: none;
+	padding: 1em 2em;
+	border-right: 2px solid #EDEDED;
+	display: block;
+}
+
+.guide-nav-link:hover {
+	color: #b0b0b0;
+}
+
+.guide-nav-link:active {
+	color: #303030;
+	border-color: #303030;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+	display: none;
+}
+
+.icon-bar {
+  display: block;
+  width: 25px;
+  height: 2.5px;
+  margin: 7px;
+	border-radius: 2px;
+  background-color: #303030;
+}
+
+/* QUIZ */
+
+.quiz-wrapper {
+	padding: 100px 10% 0;
+	overflow: hidden;
+}
+
+.quiz {
+  position: relative;
+  background: linear-gradient(180deg, #F2F5F9 50%, white 100%);
+  padding: 11.5% 10% 5%;
+  border-radius: 100px 100px 0 0;
+	width: auto;
+	gap: 2em;
+}
+
+.quiz-question-wrapper {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quiz-question {
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.quiz-info-text {
+	font-size: 1.25em;
+	text-align: center;
+}
+
+.people-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.people-block {
+	display: grid;
+	grid-template-columns: auto 3fr 2fr;
+  grid-template-rows: 1fr;
+  gap: 3em;
+	align-items: center;
+}
+
+.icon-small {
+	width: 75px;
+}
+
+.people-button-wrapper {
+	display: flex;
+	align-items: center;
+	justify-self: end;
+}
+
+.people-button {
+	height: 35px;
+	width: 35px;
+	background-color: transparent;
+	border: solid 1.5px #B1B1B1;
+	border-radius: 35px;
+	color: #B1B1B1;
+	font-size: 1.25em;
+	font-family: 'Nunito';
+	transition: 0.3s ease;
+}
+
+/* for some reason, when i transform the button directly, the javascript does not work, so i have resorted to adding a wrapper around each plus/minus button */
+.people-button-hover-wrapper {
+	transition: 0.2s ease-in-out;
+}
+
+
+.people-button-hover-wrapper:hover {
+	transform: scale(1.15);
+}
+
+.people-number {
+	margin: 0 1em;
+	width: 3ch;
+	text-align: center;
+}
+
+.option-heading {
+	margin: 0;
+}
+
+.option-text {
+	margin: 0;
+}
+
+.standard-button.form-button {
+	max-width: 500px;
+}
+
+/* QUIZ PG 2 */
+
+.link-arrow.back {
+	background-color: transparent;
+  color: #303030;
+  border-style: none;
+  font-family: 'Nunito';
+  font-size: 1em;
+  font-weight: 600;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+}
+
+.activity-grid {
+	width: 80%;
+	max-width: 900px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0.75em;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 5vw;
+}
+
+.option-text-wrapper.activity {
+	position: absolute;
+	left: 100px;
+}
+
+
+.activity-wrapper {
+	position: relative;
+}
+
+.activity-block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 100%;
+	height: 60px;
+	width: 60px;
+	transition: 0.3s ease;
+}
+
+
+.activity-check-box {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	opacity: 0;
+}
+
+.button-container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+input:checked + .activity-block {
+	background-color: #587291;
+}
+
+/* QUIZ PG 3 */
+.slider-wrapper {
+	margin-top: 5em;
+	margin-bottom: 8em;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	max-width: 480px;
+}
+
+.slider-text-wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.form-slider {
+  -webkit-appearance: none;
+	width: 100%;
+	background: #DDE4EC;
+	outline: none;
+	height: 16px;
+	border-radius: 8px;
+	left: -2px;	
+  overflow: hidden;
+}
+
+/* https://stackoverflow.com/questions/18389224/how-to-style-html5-range-input-to-have-different-color-before-and-after-slider */
+.form-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #DDE4EC;
+	outline: solid 2px #587291;
+	outline-offset: -2px;
+  width: 16px;
+  height: 16px;
+	border-radius: 8px;
+  cursor: pointer;
+	box-shadow: -488px 0 0 480px #587291;
+}
+
+.form-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+	border-radius: 8px;
+  background: #DDE4EC;
+	outline: solid 2px #587291;
+	outline-offset: -2px;
+  cursor: pointer;
+	box-shadow: -488px 0 0 480px #587291;
+}
+
+
+/* ITINERARY */
+.itinerary-block-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 3em;
+	margin: 3em 0;
+}
+
+.itinerary-block {
+	display: flex;
+	align-items: center;
+	gap: 5vw;
+	
+}
+
+.itinerary-image-wrapper {
+	width: 40%;
+}
+
+.itinerary-image {
+	width: 100%;
+	height: 300px;
+	
+	object-fit: cover;
+}
+
+.itinerary-content-wrapper {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+.itinerary-activity {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	margin-left: -15px;
+}
+
+.itinerary-day {
+	font-size: 2em;
+}
+
+.itinerary-activity p {
+	margin: 0;
+}
+
+/* MOBILE */
+@media screen and (max-width: 800px) {
+	header {	
+  	padding: 0 5% 0;
+	}
+
+	.logo {
+		height: 60px;
+	}
+
+	.logo-name {
+		width: 5ch;
+		font-size: 1em;
+	}
+	
+	.nav-button-wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-button {
+		padding: 0.6em 0.75em;
+	}
+	
+	.nav-toggle {
+		display: block;
+		margin-left: 1em;
+	}
+
+	.nav-wrapper {
+		height: 100px;
+	}
+	
+	.nav-menu {
+		display: none;
+		position: absolute;
+		background: rgb(0,0,0,0.6);
+		width: 100vw;
+		height: 100vh;
+		top: 100px;
+		left: 0;
+		z-index: 1;
+	}
+	
+	.nav-link-wrapper {
+		position: absolute;
+		background: white;
+		border-radius: 0 0 24px 24px;
+		left: 0;
+		display: none;
+		width: 100%;
+		padding: 20px 0;
+		margin: 0;
+	}
+
+	.nav-item {
+		display: block;
+	}
+
+	.nav-link {
+		padding: 20px 5%;
+		text-align: right;
+	}
+
+	.nav-active {
+		display: block;
+	}
+	
+	/* HEADINGS */
+	h1 {
+	  font-size: 3em;
+	  margin-top: 0.4em;
+	}
+	
+	h2 {
+	  font-size: 1.5em;
+	}
+		
+	/* HOME HERO */
+		.hero {
+			flex-direction: column-reverse;
+		  align-items: center;
+			padding: 0% 5% 75px;
+		}
+		
+	.hero-flex-box {
+	  width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.image {
+		padding-bottom: 0;
+		padding-top: 10%;
+	}
+	
+	.hero-image {
+		max-width: 100%;
+		width: 100%;
+	  border-radius: 20vw 0px;
+	  margin: 0;
+	}
+	
+	.stats-wrapper {
+	  text-align: center;
+		margin-left: 2.5em;
+	}
+	
+	.stats-block {
+	  margin-right: 2.5em;
+	}
+	
+	.stats-number {
+	  font-family: 'Poppins';
+	  font-weight: 500;
+	  font-size: 1.25em;
+	}
+	
+	.hero-links {
+		margin-left: -0.25em;
+	}
+	
+	/* SLIDE */
+	
+	.home-body {
+		margin-top: -75px;
+	  border-radius: 75px 75px 0 0;
+	  padding: 15% 5% 10%;
+	}
+	
+	.process-wrapper {
+		display: block;
+	  text-align: left;
+	  margin-top: 2em;
+	}
+	
+	.process-block {
+	  width: 100%;
+	}
+	
+	.process-image {
+	 	height: 60vw;
+		max-height: 400px;
+		object-position: 50% 70%;
+	}
+	
+	.slide-control {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 4em;
+		margin-left: 15px;
+	
+	}
+	
+	.slide-arrow, .slide-indicator {
+		cursor: pointer;
+	}
+	
+	.slide-indicator {
+		width: 15px;
+		height: 15px;
+		margin-right: 15px;
+		border-radius: 100%;
+		background-color: #C5CEDA;
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.indicator-solid {
+		background-color: #587291;
+	}
+	
+	/* FOOTER QUIZ */
+	.footer-quiz-wrapper {
+	  padding: 75px 5% 10%;
+	  border-radius: 75px 75px 0 0;
+		margin: 0;
+	}
+	
+	.footer-text {
+	  width: auto;
+		font-size: 1em;
+		max-width: 45ch;
+	}
+	
+	.footer-icon-wrapper {
+	  top: -50px;
+	  width: 75px;
+	  height: 75px;
+	  border-width: 7.5px;
+		font-size: 1.25em;
+	}
+	
+	.footer-icon {
+	  width: 45px;
+	}
+
+	/* ABOUT */
+	
+	.header-page {
+	  padding: 0 5% 75px;
+	}
+	
+	.page-body {
+	  margin-top: -75px;
+	  border-radius: 75px 75px 0 0;
+	  padding: 5% 5% 10%;
+	}
+	
+	.about-flex-wrapper {
+		flex-direction: column;
+	}
+	
+	.about-block {
+		width: 100%;
+	}
+	
+	.about-image {
+		border-radius: 55px;
+	}
+
+	.about-block > h2 {
+		text-align: center;
+	}
+	
+	.contact-section {
+		padding: 0 0 10%;
+		margin-top: 10%;
+	}
+	
+	/* FORM */
+	.contact-wrapper {
+	  padding: 15% 5% 10%;
+	  border-radius: 75px 75px 0 0;
+	}
+	
+	form > ul {
+		width: 70%;
+		min-width: 200px;
+	}
+	
+	/* GUIDE */
+	.guide {
+		flex-direction: column;
+		gap: 0;
+	}
+	
+	.guide-content-wrapper {
+		width: 100%;
+	}
+	
+	.guide-block {
+		flex-direction: column-reverse;
+	}
+	
+	.guide-content {
+		width: 100%;
+	}
+	
+	.guide-image-block {
+		width: 100%;
+	}
+	
+	/* GUIDE NAV */
+	.guide-nav {
+		display: flex;
+		overflow: scroll;
+		width: 100%;
+		background-color: white;
+		margin: 0;
+		padding: 2% 0;
+		justify-content: space-between;
+	}
+	
+	.guide-nav-item {
+		text-align: center;
+	}
+	
+	.guide-nav-link {
+		padding: 1em 1em;
+		border-right: none;
+		width: 100%;
+	}
+
+	/* QUIZ */
+		
+	.quiz-wrapper {
+		padding: 55px 0 0;
+	}
+	
+	.quiz {
+	  padding: 10% 5% 10%;
+	  border-radius: 75px 75px 0 0;
+		gap: 1.5em;
+	}
+	
+	.quiz-question {
+		font-size: 1.25em;
+		font-weight: 500;
+	}
+	
+	.quiz-info-text {
+		font-size: 1em;
+	}
+	
+	.people-wrapper {
+		gap: 1em;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	
+	.people-block {
+	  gap: 1em;
+	}
+	
+	.people-button {
+		height: 30px;
+		width: 30px;
+		font-size: 0.9em;
+	}
+	
+	.people-number {
+		margin: 0 0.5em;
+		width: 2ch;
+	}
+	
+	.option-heading {
+		font-size: 1em;
+	}
+	
+	.standard-button.form-button {
+		max-width: 350px;
+	}
+	
+	/* QUIZ PG 2 */
+	
+		.link-arrow.back {
+		left: 40px;
+		top: -40px;
+	}
+	
+	.activity-grid {
+		width: 100%;
+		grid-template-columns: 1fr;
+	  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	  gap: 1em;
+		margin-top: 1.5em;
+		margin-bottom: 1.5em;
+		margin-left: 30vw;
+	}
+	
+	/* ITINERARY  */
+	.itinerary-block-wrapper {
+		gap: 5em;
+		margin: 3em 0;
+	}
+	
+	.itinerary-block {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.itinerary-image-wrapper {
+		width: 100%;
+	}
+		
+	.itinerary-image {
+		height: 300px;
+		object-position: 50% 70%;
+	}
+	
+	.itinerary-content-wrapper {
+		width: 100%;
+	}
+	
+	.itinerary-day {
+		font-size: 1.75em;
+		text-align: center;
+	}
+	
+	.itinerary-activity-heading {
+		font-size: 1em;
+	}
+	
+}

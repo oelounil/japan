@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Japan Tourism</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+		<nav class="nav-wrapper">
+			<a href="/index.html" class="logo-wrapper">
+				<img src="images/logo.png" class="logo" alt="see japan logo with mount fuji, red sun and green grass">
+				<span class="logo-name">Japan Tourism</span>
+			</a>
+			<div class="nav-menu">
+				<ul class="nav-link-wrapper">
+					<li class="nav-item"><a href="/index.html" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="/guide.html" class="nav-link">Guide to Japan</a></li>
+					<li class="nav-item"><a href="/about.html" class="nav-link">About</a></li>
+				</ul>
+			</div>
+			<div class="nav-button-wrapper">
+				<button class="standard-button nav-button" onclick="window.location.href='/quiz';" type="button">Plan my trip</button>
+				<button class="nav-toggle" >
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section class="hero">
+			<div class="hero-flex-box">
+				<h1>See Japan</h1>
+				<h2>Travelling Japan made simple</h2>
+				<p class="larger-text">Too busy to research hours and hours to create an itinerary? Use our itinerary quiz to
+					plan your own personalised trip to Japan without the hassle. Join thousands of people who have saved thousands
+					of hours and start your dream journey today.</p>
+				<div class="stats-wrapper">
+					<div class="stats-block">
+						<p class="stats-number">4500+</p>
+						<p class="stats-text">Trips planned</p>
+					</div>
+					<div class="stats-block">
+						<p class="stats-number">100+</p>
+						<p class="stats-text">Places to go</p>
+					</div>
+				</div>
+				<div class="hero-links">
+					<button class="standard-button hero-button" onclick="window.location.href='/quiz';">Plan my trip</button>
+					<a href="/about.html" class="link-arrow">
+						<div class="link-arrow-content">
+							About us
+							<div class="link-arrow-icon"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+			<div class="hero-flex-box image">
+				<img src="images/hero-image.jpg" class="hero-image" alt="Chureito Pagoda with mount fuji in the background">
+			</div>
+		</section>
+
+		<section class="home-body">
+			<h2>How it works</h2>
+			<div class="process-wrapper">
+				<div class="process-block">
+					<img src="images/step-1.jpg" class="process-image" alt="Hakone Torii Gate – red japanese gate from shinto religion surround by tall green trees">
+					<h3>1. Personalise your plans</h3>
+					<p>Using our itinerary quiz, we’ll ask a few but important questions about your trip and preferences to
+						determine the best itinerary for you. Don’t worry, it’ll only take minutes.</p>
+				</div>
+
+				<div class="process-block">
+					<img src="images/step-2.jpg" class="process-image" alt="Woman wearing a kimono in front of a shrine">
+					<h3>2. Finalise payment</h3>
+					<p>To secure your itinerary and bookings, we will take payment directly and securely on our website. The final
+						details will be emailed to you, and all that’s left is to wait and pack for the trip!</p>
+				</div>
+
+				<div class="process-block">
+					<img src="images/step-3.jpg" class="process-image" alt="aerial view of a large pedestrian crossing with people walking through it">
+					<h3>3. Hop on a flight!</h3>
+					<p>We’ll try out best to make sure your journey with us is as smooth as possible. If you ever need any
+						assistant during your trip, we will provide you with all the contact details you need.</p>
+				</div>
+			</div>
+			
+<!-- slideshow code modified from https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+			<div class="slide-control">
+				<span class="slide-indicator" onclick="currentDiv(1)"></span>
+				<span class="slide-indicator" onclick="currentDiv(2)"></span>
+				<span class="slide-indicator" onclick="currentDiv(3)"></span>
+			</div>
+		</section>
+
+		<section class="footer-quiz-wrapper">
+			<div class="footer-icon-wrapper"><img src="images/footer-icon.png" class="footer-icon"
+					alt="graphic icon of a passport"></div>
+			<h2>Start your journey now</h2>
+			<p class="larger-text footer-text">Join thousands of others in creating your dream journey without the hassle.
+				We’ll take care of all the hard work so you can just show up to the airport and enjoy your trip.</p>
+			<button class="standard-button footer-button" onclick="window.location.href='/quiz';">Plan my trip</button>
+		</section>
+	</main>
+	<script src="script.js"></script>
+</body>
+
+</html>
